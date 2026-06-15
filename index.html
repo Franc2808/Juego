@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Platform Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="800" height="480"></canvas>
+    <div id="ui-overlay">
+      <div id="lives-display">❤️ <span id="lives-count">3</span></div>
+      <div id="controls-hint">← → saltar: ESPACIO | doble salto disponible</div>
+    </div>
+    <div id="start-screen">
+      <div class="start-box">
+        <h1>🐾 Poodle Adventure</h1>
+        <p>Ayuda a Churro a llegar a casa</p>
+        <div class="controls-info">
+          <span>← → Mover</span>
+          <span>ESPACIO Saltar</span>
+          <span>2x ESPACIO Doble salto</span>
+        </div>
+        <button id="start-btn">▶ JUGAR</button>
+      </div>
+    </div>
+    <div id="game-over-screen" class="hidden">
+      <div class="start-box">
+        <h1>¡Ups!</h1>
+        <p>Churro necesita otra oportunidad...</p>
+        <button id="retry-btn">▶ INTENTAR DE NUEVO</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
